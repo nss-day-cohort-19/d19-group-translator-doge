@@ -31,7 +31,7 @@ var Translate = (function () {
      			})();
      
 
-}
+
    //  french.translateToFrench = function() {
 
 /*}(translateText);
