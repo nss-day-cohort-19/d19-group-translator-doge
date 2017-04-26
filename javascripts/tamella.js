@@ -54,8 +54,8 @@ var Translate = (function(){
     };
 })();
 
-var testingCode = translate.toSpanish("happy new year and please take your shoes off new");
-console.log("please do something you asshole", testingCode);
+// var testingCode = translate.toSpanish("happy new year and please take your shoes off new");
+// console.log("please do something you asshole", testingCode);
 
 //var toDom = document.getElementById("outputText");
 //

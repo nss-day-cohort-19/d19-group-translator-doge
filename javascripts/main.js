@@ -10,7 +10,10 @@ var lang = document.getElementById('lang');
   console.log(lang);
 var outputBox = document.getElementById('outputText');
 
-//event listeners
+//event listeners (idk if this will work...or if it makes sense....but
+//  I think this is what y'all meant when we realized the previous plan
+//  exceeded MVP. Let's go through it together to make sure I typed it out
+//  how we intended)
 btn.addEventListener("click", checkLang)
 
 
@@ -18,16 +21,16 @@ function checkLang(e){
   console.log('checkLang wants to run real bad');
   var textValue = "";
   textValue = textInput.value.toLowerCase();
-  console.log('text input: ', textValue);
+  console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
   var langValue = "";
   langValue = lang.value;
-  console.log('language: ', langValue);
+  console.log('HOLLABACK, LANGUAGE!!: ', langValue);
 
   switch (langValue) {
 
-    case "doge":
-    Translator.getDoge(textValue);
-    break;
+    // case "doge":
+    // Translator.getDoge(textValue);
+    // break;
 
     case "german":
     Translator.getGerman(textValue);
