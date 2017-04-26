@@ -1,6 +1,6 @@
 "use strict";
 
-var output = {};
+//var output = {};
 
 var btn = document.getElementById('trans-btn');
   console.log(btn);
@@ -16,11 +16,10 @@ var outputBox = document.getElementById('outputText');
 //  how we intended)
 btn.addEventListener("click", checkLang);
 
-
 function checkLang(e){
   // console.log('checkLang wants to run real bad');
   var textValue = "";
-  textValue = textInput.value;
+  textValue = textInput.value.toLowerCase();
   // console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
   var langValue = "";
   langValue = lang.value;
