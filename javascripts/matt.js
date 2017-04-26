@@ -1,4 +1,4 @@
-
+// console.log("Be you");
 
 var Translate = (function(){
     // var textString = "merry christmas and happy new year"
@@ -16,17 +16,28 @@ var Translate = (function(){
         "new" : "neu",
         "and" : "ein"
     };
+    var translated = [];
     return {
         toGerman : function(textString) {
             var arrayWords = textString.split(" ");
-            for (var i = 0; i < arrayWords.length; i++) {
-                console.log(arrayWords[i]);
-                for(var j = 0; j < germanOb.length; j++) {
-                    console.log(germanOb[j]);
+            var newArray = [];
+            var transArray = [];
+            arrayWords.forEach(function(i){
+                for (var j = 0; j < Object.keys(germanOb).length; j++) {
+                    newArray = Object.keys(germanOb);
+                    transArray = Object.values(germanOb);
+                    // console.log(i, newArray[j]);
+                    if(i === newArray[j]) {
+                        translated += transArray[j] + " ";
+                        arrayWords.push(translated);
+                    }
                 }
-            }
+            });
+            console.log(translated);
+            return translated
         }
     }
 })();
 
+// Translate.toGerman("merry christmas");
 
