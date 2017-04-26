@@ -1,16 +1,16 @@
 var Translate = (function () {
-     var frenchText = {"merry":"Joyeux",
-     				   "christmas":"Noel",
-     				   "and":"et",
-     				   "happy":"Bonne",
-     				   "new":"nouvel",
-     				   "year":"an",
-     					"jingle":"Tinter",
-     					"joy":"Joie",
-     					"holidays":"Vacances",
-     					"santa":"Père Noël",
-     					"snow":"neige",
-     					"a":"une",
+  var frenchText = {"merry":"Joyeux",
+    "christmas":"Noel",
+    "and":"et",
+    "happy":"Bonne",
+    "new":"nouvel",
+    "year":"an",
+    "jingle":"Tinter",
+    "joy":"Joie",
+    "holidays":"Vacances",
+    "santa":"Père Noël",
+    "snow":"neige",
+    "a":"une",
      				};
      				return{
      					toFrench: function(englishtext){
