@@ -18,13 +18,13 @@ btn.addEventListener("click", checkLang);
 
 
 function checkLang(e){
-  // console.log('checkLang wants to run real bad');
+    // console.log('checkLang wants to run real bad');
   var textValue = "";
-  textValue = textInput.value;
-  // console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
   var langValue = "";
+  textValue = textInput.value.toLowerCase();
+    // console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
   langValue = lang.value;
-  // console.log('HOLLABACK, LANGUAGE!!: ', langValue);
+    // console.log('HOLLABACK, LANGUAGE!!: ', langValue);
 
   switch (langValue) {
 
