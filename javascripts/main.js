@@ -29,15 +29,15 @@ function checkLang(e){
   switch (langValue) {
 
     // case "doge":
-    // Translator.getDoge(textValue);
+    // Translator.toDoge(textValue);
     // break;
 
     case "german":
-    Translator.getGerman(textValue);
+    Translator.toGerman(textValue);
     break;
 
     case "spanish":
-    Translator.getSpanish(textValue);
+    Translator.toSpanish(textValue);
     break;
 
     default:
