@@ -14,17 +14,17 @@ var outputBox = document.getElementById('outputText');
 //  I think this is what y'all meant when we realized the previous plan
 //  exceeded MVP. Let's go through it together to make sure I typed it out
 //  how we intended)
-btn.addEventListener("click", checkLang)
+btn.addEventListener("click", checkLang);
 
 
 function checkLang(e){
-  console.log('checkLang wants to run real bad');
+  // console.log('checkLang wants to run real bad');
   var textValue = "";
   textValue = textInput.value.toLowerCase();
-  console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
+  // console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
   var langValue = "";
   langValue = lang.value;
-  console.log('HOLLABACK, LANGUAGE!!: ', langValue);
+  // console.log('HOLLABACK, LANGUAGE!!: ', langValue);
 
   switch (langValue) {
 
@@ -32,16 +32,16 @@ function checkLang(e){
     // Translator.toDoge(textValue);
     // break;
 
-    case "german":
-    Translate.toGerman(textValue);
+    case "spanish":
+    output.innerHTML = Translate.toSpanish(textValue);
     break;
 
-    case "spanish":
-    Translate.toSpanish(textValue);
+    case "german":
+    output.innerHTML = Translate.toGerman(textValue);
     break;
 
     case "french":
-    Translate.toFrench(textValue);
+    output.innerHTML = Translate.toFrench(textValue);
     break;
 
     default:
@@ -49,8 +49,8 @@ function checkLang(e){
   }
 }
 
-function printToDom(outputString) {
-  output.innerHTML = outputString;
-}
+// function printToDom(outputString) {
+//   output.innerHTML = outputString;
+// }
 
  // if(lang.option === 'doge')
