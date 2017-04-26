@@ -1,4 +1,4 @@
-var Translate = (function () {
+var Translate = (function (oldTranslate) {
   var frenchText = {"merry":"Joyeux",
     "christmas":"Noel",
     "and":"et",
@@ -12,8 +12,7 @@ var Translate = (function () {
     "snow":"neige",
     "a":"une",
      				};
-     				return{
-     					toFrench: function(englishtext){
+     					oldTranslate.toFrench = function(englishtext){
      						var arraywords = englishtext.split("");
      						for(var i = 0; i < arraywords.length;
      							i++){
@@ -27,9 +26,9 @@ var Translate = (function () {
      							console.log(frenchText[j]);
      						}
      					}
-     				}
-     			})();
-     
+                    return oldTranslate
+     			})(Translate);
+
 
 
    //  french.translateToFrench = function() {

@@ -14,30 +14,30 @@ var outputBox = document.getElementById('outputText');
 //  I think this is what y'all meant when we realized the previous plan
 //  exceeded MVP. Let's go through it together to make sure I typed it out
 //  how we intended)
-btn.addEventListener("click", checkLang)
+btn.addEventListener("click", checkLang);
 
 
 function checkLang(e){
-  console.log('checkLang wants to run real bad');
+  // console.log('checkLang wants to run real bad');
   var textValue = "";
-  textValue = textInput.value.toLowerCase();
-  console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
+  textValue = textInput.value;
+  // console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
   var langValue = "";
   langValue = lang.value;
-  console.log('HOLLABACK, LANGUAGE!!: ', langValue);
+  // console.log('HOLLABACK, LANGUAGE!!: ', langValue);
 
   switch (langValue) {
 
     // case "doge":
-    // Translator.toDoge(textValue);
+    // Translate.toDoge(textValue);
     // break;
-
-    case "german":
-    Translate.toGerman(textValue);
-    break;
 
     case "spanish":
     Translate.toSpanish(textValue);
+    break;
+
+    case "german":
+    Translate.toGerman(textValue);
     break;
 
     case "french":
