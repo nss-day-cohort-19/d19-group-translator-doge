@@ -33,15 +33,15 @@ function checkLang(e){
     // break;
 
     case "spanish":
-    Translate.toSpanish(textValue);
+    outputBox.innerHTML = Translate.toSpanish(textValue);
     break;
 
     case "german":
-    Translate.toGerman(textValue);
+    outputBox.innerHTML = Translate.toGerman(textValue);
     break;
 
     case "french":
-    Translate.toFrench(textValue);
+    outputBox.innerHTML = Translate.toFrench(textValue);
     break;
 
     default:
@@ -49,8 +49,8 @@ function checkLang(e){
   }
 }
 
-function printToDom(outputString) {
-  output.innerHTML = outputString;
-}
+// function printToDom(outputString) {
+//   output.innerHTML = outputString;
+// }
 
  // if(lang.option === 'doge')
