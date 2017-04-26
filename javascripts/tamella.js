@@ -3,7 +3,6 @@ console.log("let's get started");
 
 
 var Translate = (function(){
-    console.log("tamsFunction Log", translate);
     var alterdArray;
     var tamsObject = {
     merry: "alegre",
