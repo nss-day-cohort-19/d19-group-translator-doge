@@ -21,8 +21,8 @@ var frenchText = {"merry":"Joyeux",
                                 console.log(arraywords[i]);
                                     for (var j = 0; j < Object.keys(frenchText).length; j++){
                                         console.log();
-                                        var newarray = Object.keys(frenchText);
-                                        var transeArray = Object.values(frenchText);
+                                        var newArray = Object.keys(frenchText);
+                                        var transArray = Object.values(frenchText);
                                         // console.log(i, newArray[j]);
                                           if(arraywords[i]=== newArray[j]) {
                                             translated += transArray[j] + " ";
@@ -32,4 +32,5 @@ var frenchText = {"merry":"Joyeux",
                             }
                             return translated;
                         }
+                        return oldTranslate
 })(Translate);
