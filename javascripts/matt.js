@@ -1,6 +1,6 @@
 // console.log("Be you");
 
-var Translate = (function(){
+var Translate = (function(oldTranslate){
     // var textString = "merry christmas and happy new year"
     var germanOb = {
         "christmas" : "Weihnachten",
@@ -17,8 +17,8 @@ var Translate = (function(){
         "and" : "ein"
     };
     var translated = [];
-    return {
-        toGerman : function(textString) {
+
+        oldTranslate.toGerman = function(textString) {
             var arrayWords = textString.split(" ");
             var newArray = [];
             var transArray = [];
@@ -36,8 +36,8 @@ var Translate = (function(){
             console.log(translated);
             return translated
         }
-    }
-})();
+    return oldTranslate
+})(Translate);
 
 // Translate.toGerman("merry christmas");
 

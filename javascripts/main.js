@@ -20,7 +20,7 @@ btn.addEventListener("click", checkLang);
 function checkLang(e){
   // console.log('checkLang wants to run real bad');
   var textValue = "";
-  textValue = textInput.value.toLowerCase();
+  textValue = textInput.value;
   // console.log('HOLLABACK, TEXTINPUT!!: ', textValue);
   var langValue = "";
   langValue = lang.value;
@@ -33,15 +33,15 @@ function checkLang(e){
     // break;
 
     case "spanish":
-    output.innerHTML = Translate.toSpanish(textValue);
+    outputBox.innerHTML = Translate.toSpanish(textValue);
     break;
 
     case "german":
-    output.innerHTML = Translate.toGerman(textValue);
+    outputBox.innerHTML = Translate.toGerman(textValue);
     break;
 
     case "french":
-    output.innerHTML = Translate.toFrench(textValue);
+    outputBox.innerHTML = Translate.toFrench(textValue);
     break;
 
     default:
