@@ -33,11 +33,15 @@ function checkLang(e){
     // break;
 
     case "german":
-    Translator.toGerman(textValue);
+    Translate.toGerman(textValue);
     break;
 
     case "spanish":
-    Translator.toSpanish(textValue);
+    Translate.toSpanish(textValue);
+    break;
+
+    case "french":
+    Translate.toFrench(textValue);
     break;
 
     default:
