@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <title>DOGE-TRANSLATOR</title>
-</head>
-<body>
-  <header>
-    <h1>Doge Translator</h1>
-    <h5>Translate holiday phrases! </h5>
-  </header>
-  <main class="container">
-    <form>
-      <fieldset>
-        <legend>Select festive phrases, and translate to a language of your choosing</legend>
-        <select name="lang" id="lang"><option value="None" selected>Select language</option>
-          <option value="doge">Doge</option>
-          <option value="german">German</option>
-          <option value="spanish">Spanish</option>
-          <option value="french">French</option>
-        </select>
-<!--         <select name="userInput"><pption value="None" selected>Select holiday phrase!</pption>
-          <option value="1">Christmas</option>
-          <option value="2">holidays</option>
-          <option value="3">year</option>
-          <option value="4">jingle</option>
-          <option value="5">bells</option>
-          <option value="6">joy</option>
-          <option value="7">snow</option>
-          <option value="8">Santa</option>
-          <option value="9">happy</option>
-          <option value="10">merry</option>
-          <option value="11">new</option></select> -->
-        <textarea name="userInput" id="userInput" placeholder="christmas"></textarea><hr>
-      </fieldset>
-    </form>
-    <div id="outputText">
-
-    </div>
-    <button type="input" id="trans-btn">Translate!</button>
-
-<!--CHALLENGE CONTENT-->
-
-  </main>
-  <footer>
-    <div class="copyright">
-      <h3>IIFE Translator</h3>
-      <h4>&copy;DOGE</h4>
-    </div>
-  </footer>
-    <script type="text/javascript" src="javascripts/tamella.js"></script>
-    <script type="text/javascript" src="javascripts/matt.js"></script>
-    <script type="text/javascript" src="javascripts/preeti.js"></script>
-    <script type="text/javascript" src="javascripts/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>DOGE-TRANSLATOR</title>
+    </head>
+    <body>
+        <header>
+            <h1>Doge Translator</h1>
+        </header>
+        <main class="container">
+            <article id="input-options">
+                <h5>Translate Your Holiday Greetings!</h5>
+                <textarea name="userInput" id="userInput" placeholder="christmas"></textarea><br>
+                <select name="lang" id="lang">
+                    <option value="None" selected>Select language</option>
+                    <option value="doge">Doge</option>
+                    <option value="german">German</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                </select><hr>
+            </article>
+            <div id="outputText"></div>
+            <button id="trans-btn">Translate!</button>
+        </main>
+        <footer>
+            <div class="copyright">
+                <h4>&copy;DOGE</h4>
+            </div>
+        </footer>
+        <script type="text/javascript" src="javascripts/tamella.js"></script>
+        <script type="text/javascript" src="javascripts/matt.js"></script>
+        <script type="text/javascript" src="javascripts/preeti.js"></script>
+        <script type="text/javascript" src="javascripts/main.js"></script>
+    </body>
 </html>
