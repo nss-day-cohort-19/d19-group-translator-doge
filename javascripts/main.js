@@ -28,9 +28,9 @@ function checkLang(e){
 
   switch (langValue) {
 
-    // case "doge":
-    // Translate.toDoge(textValue);
-    // break;
+    case "doge":
+    outputBox.innerHTML = Translate.toDoge(textValue);
+    break;
 
     case "spanish":
     outputBox.innerHTML = Translate.toSpanish(textValue);
