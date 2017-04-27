@@ -11,17 +11,22 @@ var Translate = (function(oldTranslate){
         "joy" : "Freude",
         "snow" : "schnee",
         "santa" : "Weihnachtsmann",
-        "happy" : "glücklich",
-        "merry" : "fröhlich",
-        "new" : "neu",
-        "and" : "ein"
-    };
+        "happy" : "Glücklich",
+        "merry" : "Fröhlich",
+        "new" : "Neu",
+        "and" : "ein",
+        "fuck" : "Scheiße",
+        "a" : "ein",
+        "family" : "familie",
+        "the" : "das",
+            };
     var translated = [];
 
         oldTranslate.toGerman = function(textString) {
             var arrayWords = textString.split(" ");
             var newArray = [];
             var transArray = [];
+            var newWord = false
             arrayWords.forEach(function(i){
                 for (var j = 0; j < Object.keys(germanOb).length; j++) {
                     newArray = Object.keys(germanOb);
@@ -29,7 +34,9 @@ var Translate = (function(oldTranslate){
                     // console.log(i, newArray[j]);
                     if(i === newArray[j]) {
                         translated += transArray[j] + " ";
-                        arrayWords.push(translated);
+                        break;
+                    }else if(i !== newArray[j] && j === 11) {
+                        translated += i + " ";
                     }
                 }
             });
