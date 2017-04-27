@@ -54,8 +54,16 @@ function checkLang(e){
   }
 }
 
-// function printToDom(outputString) {
-//   output.innerHTML = outputString;
-// }
+function printToDom(outputString) {
+    outputBox.innerHTML = outputString;
+    if (outputString != "") {
+        speak(outputString);
+    }
+}
 
- // if(lang.option === 'doge')
+function speak(outputString) {
+    var speechOptions = new SpeechSynthesisUtterance();
+    speechOptions.text = outputString;
+    speechOptions.lang = 'en-US';
+    speechSynthesis.speak(speechOptions);
+}
