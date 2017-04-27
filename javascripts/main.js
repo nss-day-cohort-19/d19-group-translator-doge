@@ -36,7 +36,7 @@ function checkLang(e){
     printToDom(translatedText);
 }
 
- function printToDom(outputString) {
+function printToDom(outputString) {
     outputBox.innerHTML = outputString;
     if (outputString != "") {
         speak(outputString);
