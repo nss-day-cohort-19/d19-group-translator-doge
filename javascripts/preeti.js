@@ -27,7 +27,9 @@ var frenchText = {"merry":"Joyeux",
                                           if(arraywords[i]=== newArray[j]) {
                                             translated += transArray[j] + " ";
                                             console.log(translated);
-                                        }
+                                        }else if(i !== newArray[j] && j === 15) {
+                                        translated += i + " ";
+                    }
                                     }
                             }
                             return translated;

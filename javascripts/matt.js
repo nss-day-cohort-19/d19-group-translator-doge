@@ -20,9 +20,10 @@ var Translate = (function(oldTranslate){
         "family" : "familie",
         "the" : "das",
             };
-    var translated = [];
+
 
         oldTranslate.toGerman = function(textString) {
+            var translated = [];
             var arrayWords = textString.split(" ");
             var newArray = [];
             var transArray = [];
@@ -35,7 +36,7 @@ var Translate = (function(oldTranslate){
                     if(i === newArray[j]) {
                         translated += transArray[j] + " ";
                         break;
-                    }else if(i !== newArray[j] && j === 11) {
+                    }else if(i !== newArray[j] && j === 15) {
                         translated += i + " ";
                     }
                 }
