@@ -1,7 +1,3 @@
-console.log("let's get started");
-
-
-
 var Translate = (function(){
     var alterdArray;
     var tamsObject = {
@@ -24,32 +20,26 @@ var Translate = (function(){
     claus: "Claus"
 
     };
-    var emptyArray = [];
     return {
         toSpanish: function(textInput) {
             var translation = "";
             alterdArray = textInput.split(" ");
             for (var i = 0; i < alterdArray.length; i++) {
-//                console.log("logging new array", alterdArray[i]);
                 var arrayWord = alterdArray[i];
                 var match = false;
                 for (prop in tamsObject) {
-                    var keysInObject;
-//                    console.log("logging keys in object", prop);
                     if (arrayWord === prop) {
-//                        console.log("found a matching word in object");
                         translation += tamsObject[prop] + " ";
                         match = true;
                         break;
                     }
-                }   if (match === false) {
-                        translation += arrayWord + " ";
-                    }
+                }
+                if (match === false) {
+                    translation += arrayWord + " ";
+                }
             }
-
             return translation;
         }
-
     };
 })();
 
