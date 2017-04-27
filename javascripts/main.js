@@ -2,9 +2,6 @@ $(document).ready(function() {
     $('select').material_select();
   });
 
-
-"use strict";
-
 var btn = document.getElementById('trans-btn');
 var textInput = document.getElementById('userInput');
 var lang = document.getElementById('lang');
@@ -19,9 +16,9 @@ function checkLang(e){
 
     switch (langValue) {
 
-    // case "doge":
-    // Translate.toDoge(textValue);
-    // break;
+    case "doge":
+    outputBox.innerHTML = Translate.toDoge(textValue);
+    break;
 
         case "spanish":
             translatedText = Translate.toSpanish(textValue);
