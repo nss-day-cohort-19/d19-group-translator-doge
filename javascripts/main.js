@@ -37,5 +37,15 @@ function checkLang(e){
 }
 
  function printToDom(outputString) {
-   outputBox.innerHTML = outputString;
+    outputBox.innerHTML = outputString;
+    if (outputString != "") {
+        speak(outputString);
+    }
+}
+
+function speak(outputString) {
+    var speechOptions = new SpeechSynthesisUtterance();
+    speechOptions.text = outputString;
+    speechOptions.lang = 'en-US';
+    speechSynthesis.speak(speechOptions);
 }
